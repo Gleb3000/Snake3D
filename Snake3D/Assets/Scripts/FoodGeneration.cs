@@ -12,7 +12,7 @@ public class FoodGeneration : MonoBehaviour
 
     void RandomPos()
     {
-        curPos = new Vector3(Random.Range(xSize*-1, xSize),0.5f, Random.Range(zSize * -1, zSize));
+        curPos = new Vector3(Random.Range(xSize*-1, xSize),0.25f, Random.Range(zSize * -1, zSize));
     }
 
     void AddNewFood()
