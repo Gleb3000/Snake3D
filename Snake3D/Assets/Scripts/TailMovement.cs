@@ -3,9 +3,9 @@
 public class TailMovement : MonoBehaviour
 {
     private float speed;
+    private bool gap;
     public int indx;
     public bool isMoving;
-    private bool gap;
 
     public SnakeMovement snakeHead;
     private Vector3 tailTarget;
