@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ButtonsFunctions : MonoBehaviour
 {
     public Canvas canvas;
+    public Text recordText;
 
     public void ChangScene(int index)
     {
         SceneManager.LoadScene(index);
         Time.timeScale = 1;
+        recordText.enabled = false;
     }
 
     public void Pause()
@@ -16,12 +19,12 @@ public class ButtonsFunctions : MonoBehaviour
         if (Time.timeScale != 0)
         {
             Time.timeScale = 0;
-            canvas.gameObject.SetActive(true);
+            canvas.enabled = true;
         }
         else
         {
             Time.timeScale = 1;
-            canvas.gameObject.SetActive(false);
+            canvas.enabled = false;
         }
     }
 }

@@ -1,20 +1,23 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Borders : MonoBehaviour
 {
     public Canvas canvas;
     public GameObject snakeHead;
+    public Text recordText;
 
     void Start()
     {
-        canvas.gameObject.SetActive(false);
+        canvas.enabled = false;
+        recordText.enabled = false;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("SnakeMain"))
         {
-            canvas.gameObject.SetActive(true);
+            canvas.enabled = true;
             snakeHead.GetComponent<SnakeMovement>().speed = 0;
             try
             {
@@ -22,6 +25,11 @@ public class Borders : MonoBehaviour
                 snakeHead.GetComponent<SnakeMovement>().taileObjects[1].GetComponent<TailMovement>().indx = -2;
             }
             catch { }
+            if(snakeHead.GetComponent<SnakeMovement>().score > PlayerPrefs.GetInt("Best Score"))
+            {
+                recordText.enabled = true;
+                PlayerPrefs.SetInt("Best Score", snakeHead.GetComponent<SnakeMovement>().score);
+            }
         }        
  
     }

@@ -10,7 +10,7 @@ public class SnakeMovement : MonoBehaviour
     public float speed = 4;
     private float rotationSpeed = 300f;
     public Text scoreText;
-    private int score = 0;
+    public int score = 0;
 
     void Start()
     {
@@ -38,7 +38,7 @@ public class SnakeMovement : MonoBehaviour
     {
         score++;
         Vector3 newTailPos = taileObjects[taileObjects.Count-1].transform.position;
-        taileObjects.Add(GameObject.Instantiate(tailPrefab, newTailPos, Quaternion.identity) as GameObject);
+        taileObjects.Add(Instantiate(tailPrefab, newTailPos, Quaternion.identity));
     }
 
     public void DeleteTail(int indx)

@@ -480,6 +480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 630013183}
   snakeHead: {fileID: 1581097593}
+  recordText: {fileID: 950972702}
 --- !u!65 &315343024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1457,6 +1458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 630013183}
   snakeHead: {fileID: 1581097593}
+  recordText: {fileID: 950972702}
 --- !u!65 &935612593
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1602,6 +1604,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Border (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7147038385797223283, guid: ff174e0593b895a4dad2e6194d081f53,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7147038385797223286, guid: ff174e0593b895a4dad2e6194d081f53,
         type: 3}
       propertyPath: snakeHead
@@ -1614,6 +1621,84 @@ PrefabInstance:
       objectReference: {fileID: 630013183}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff174e0593b895a4dad2e6194d081f53, type: 3}
+--- !u!1 &950972700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 950972701}
+  - component: {fileID: 950972703}
+  - component: {fileID: 950972702}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &950972701
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950972700}
+  m_LocalRotation: {x: 0, y: 0, z: -0.20816772, w: 0.97809315}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1577196312}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -24.03}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 443, y: 170}
+  m_SizeDelta: {x: 395.46063, y: 115.348145}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &950972702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950972700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 90
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Record
+--- !u!222 &950972703
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950972700}
+  m_CullTransparentMesh: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,6 +1797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 630013183}
+  recordText: {fileID: 950972702}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1799,7 +1885,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Retry
+  m_Text: 'Restart
+
+'
 --- !u!222 &1029039847
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1823,7 +1911,7 @@ GameObject:
   - component: {fileID: 1231476809}
   - component: {fileID: 1231476808}
   m_Layer: 5
-  m_Name: Button
+  m_Name: MenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1998,6 +2086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 630013183}
   snakeHead: {fileID: 1581097593}
+  recordText: {fileID: 950972702}
 --- !u!65 &1512885177
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2110,6 +2199,7 @@ RectTransform:
   - {fileID: 1231476807}
   - {fileID: 1812029830}
   - {fileID: 2108363954}
+  - {fileID: 950972701}
   m_Father: {fileID: 162410064}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2186,6 +2276,7 @@ MonoBehaviour:
     type: 3}
   speed: 4
   scoreText: {fileID: 1589235487}
+  score: 0
 --- !u!54 &1581097599
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2420,6 +2511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 630013183}
   snakeHead: {fileID: 1581097593}
+  recordText: {fileID: 950972702}
 --- !u!65 &1809177077
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2512,7 +2604,7 @@ GameObject:
   - component: {fileID: 1812029832}
   - component: {fileID: 1812029831}
   m_Layer: 5
-  m_Name: Button
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3081,6 +3173,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5387651719710806154, guid: ca1e571f71ff82747817e8fd78944c9a,
+        type: 3}
+      propertyPath: m_Name
+      value: MenuButton
+      objectReference: {fileID: 0}
     - target: {fileID: 5387651720792346677, guid: ca1e571f71ff82747817e8fd78944c9a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3090,6 +3187,18 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387651720792346679, guid: ca1e571f71ff82747817e8fd78944c9a,
+        type: 3}
+      propertyPath: m_Name
+      value: RestartButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387651720812078817, guid: ca1e571f71ff82747817e8fd78944c9a,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Restart
+
+'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca1e571f71ff82747817e8fd78944c9a, type: 3}

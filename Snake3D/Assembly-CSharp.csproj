@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\CameraControl.cs" />
     <Compile Include="Assets\Scripts\Food.cs" />
     <Compile Include="Assets\Scripts\FoodGeneration.cs" />
+    <Compile Include="Assets\Scripts\GameSaves.cs" />
     <Compile Include="Assets\Scripts\SnakeMovement.cs" />
     <Compile Include="Assets\Scripts\TailMovement.cs" />
     <Reference Include="UnityEngine">
