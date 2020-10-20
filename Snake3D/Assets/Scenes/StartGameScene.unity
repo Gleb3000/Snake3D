@@ -1798,6 +1798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 630013183}
   recordText: {fileID: 950972702}
+  scoreText: {fileID: 0}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0

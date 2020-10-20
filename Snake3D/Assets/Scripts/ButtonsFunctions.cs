@@ -6,12 +6,14 @@ public class ButtonsFunctions : MonoBehaviour
 {
     public Canvas canvas;
     public Text recordText;
+    public MainMenu mainMenu;
 
     public void ChangScene(int index)
     {
         SceneManager.LoadScene(index);
         Time.timeScale = 1;
         recordText.enabled = false;
+        mainMenu.scoreText.text = PlayerPrefs.GetInt("Best Score").ToString();
     }
 
     public void Pause()
