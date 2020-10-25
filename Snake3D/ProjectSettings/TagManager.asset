@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SnakeMain
   - GameOverMenu
+  - FullSnake
   layers:
   - Default
   - TransparentFX

@@ -3,13 +3,14 @@ using UnityEngine.UI;
 
 public class Borders : MonoBehaviour
 {
-    public Canvas canvas;
+    public GameObject panel;
     public GameObject snakeHead;
     public Text recordText;
+    private SnakeMovement snake;
 
     void Start()
     {
-        canvas.enabled = false;
+        panel.SetActive(false);
         recordText.enabled = false;
     }
 
@@ -17,18 +18,14 @@ public class Borders : MonoBehaviour
     {
         if (other.CompareTag("SnakeMain"))
         {
-            canvas.enabled = true;
-            snakeHead.GetComponent<SnakeMovement>().speed = 0;
-            try
-            {
-                snakeHead.GetComponent<SnakeMovement>().taileObjects[1].GetComponent<TailMovement>().isMoving = false;
-                snakeHead.GetComponent<SnakeMovement>().taileObjects[1].GetComponent<TailMovement>().indx = -2;
-            }
-            catch { }
-            if(snakeHead.GetComponent<SnakeMovement>().score > PlayerPrefs.GetInt("Best Score"))
+            Time.timeScale = 0;
+            snake = snakeHead.GetComponent<SnakeMovement>();
+            panel.SetActive(true);
+
+            if(snake.score > PlayerPrefs.GetInt("Best Score"))
             {
                 recordText.enabled = true;
-                PlayerPrefs.SetInt("Best Score", snakeHead.GetComponent<SnakeMovement>().score);
+                PlayerPrefs.SetInt("Best Score", snake.score);
             }
         }        
  
