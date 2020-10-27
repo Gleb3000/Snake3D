@@ -222,9 +222,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e2340000
-      m_LastClickedID: 13538
-      m_ExpandedIDs: 12fbffff1cfbffff3a34000084340000dc340000
+      m_SelectedIDs: da340000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 1cfbffff38340000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -483,19 +483,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: 96
   m_LastProjectPath: D:\Unity Projects\Snake 3D\Snake3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b2350000
-    m_LastClickedID: 13746
+    m_SelectedIDs: ae350000
+    m_LastClickedID: 13742
     m_ExpandedIDs: 0000000090350000923500009435000096350000983500009a35000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -524,7 +524,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000090350000923500009435000096350000983500009a350000
+    m_ExpandedIDs: 0000000090350000923500009435000096350000983500009a35000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -549,8 +549,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: e2340000
-    m_LastClickedInstanceID: 13538
+    m_SelectedInstanceIDs: da340000
+    m_LastClickedInstanceID: 13530
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300004e3c0000e67b000000000000
     m_RenameOverlay:

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 495909411841389710}
   - component: {fileID: 495909411841389711}
   - component: {fileID: 495909411841389704}
-  - component: {fileID: 495909411841389705}
+  - component: {fileID: -8885990120842722400}
   m_Layer: 0
   m_Name: SnakeHead
   m_TagString: Untagged
@@ -80,7 +80,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &495909411841389705
+--- !u!135 &-8885990120842722400
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
