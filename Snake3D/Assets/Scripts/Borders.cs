@@ -4,7 +4,6 @@ using UnityEngine.UI;
 public class Borders : MonoBehaviour
 {
     public GameObject panel;
-    public GameObject snakeHead;
     public Text recordText;
     private SnakeMovement snake;
 
@@ -16,10 +15,10 @@ public class Borders : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("SnakeMain"))
+        if (other.gameObject.GetComponent<SnakeMovement>() != null)
         {
             Time.timeScale = 0;
-            snake = snakeHead.GetComponent<SnakeMovement>();
+            snake = other.gameObject.GetComponent<SnakeMovement>();
             panel.SetActive(true);
 
             if(snake.score > PlayerPrefs.GetInt("Best Score"))

@@ -50,7 +50,7 @@ public class TailMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("SnakeMain"))
+        if (other.gameObject.GetComponent<SnakeMovement>())
         {
             if(indx > 3)
             {
