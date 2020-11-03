@@ -28,7 +28,6 @@ public class GameOverMenu : MonoBehaviour
 
     public void Disenebled()
     {
-        if(recordText.enabled)
-            recordText.enabled = false;
+        recordText.enabled = false;
     }
 }

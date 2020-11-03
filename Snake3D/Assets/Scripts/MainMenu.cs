@@ -9,4 +9,9 @@ public class MainMenu : MonoBehaviour
     {
         scoreText.text = PlayerPrefs.GetInt("Best Score").ToString();
     }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }

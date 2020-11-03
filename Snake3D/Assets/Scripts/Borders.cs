@@ -21,10 +21,10 @@ public class Borders : MonoBehaviour
             snake = other.gameObject.GetComponent<SnakeMovement>();
             panel.SetActive(true);
 
-            if(snake.score > PlayerPrefs.GetInt("Best Score"))
+            if (snake.score > PlayerPrefs.GetInt("Best Score"))
             {
                 recordText.enabled = true;
-                PlayerPrefs.SetInt("Best Score", snake.score);
+                PlayerPrefs.SetInt("Best Score",snake.score);
             }
         }        
  

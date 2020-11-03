@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Borders.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
+    <Compile Include="Assets\Scripts\DontDestroyOnLoadManeger.cs" />
     <Compile Include="Assets\Scripts\Food.cs" />
     <Compile Include="Assets\Scripts\FoodGeneration.cs" />
     <Compile Include="Assets\Scripts\GameOverMenu.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\SnakeMovement.cs" />
     <Compile Include="Assets\Scripts\TailMovement.cs" />
+    <Compile Include="Assets\Scripts\TemporarySaves.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Unity Downloads/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
